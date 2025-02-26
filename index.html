@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Tab Interface...</title>
 	<link href="styles.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+	<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -29,10 +31,23 @@
 			<p>Caramels toffee marzipan muffin. Cotton candy tootsie roll gummi bears fruitcake sesame snaps applicake unerdwear.com. Caramels soufflé sweet powder caramels gummi bears chocolate cake. Caramels tootsie roll bear claw topping jelly-o. Tart danish jelly bonbon. Toffee fruitcake carrot cake bear claw. Jujubes sugar plum jujubes caramels cake. Lollipop sweet danish icing donut sweet pie dessert sesame snaps.</p>
 		</div>
 	</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<script>
+		/* $('#tabs>ul>li>a').click(function(){
+			//1.Get all the anchor tags & make sure it is the default color and then make sure the one we have clicked on changes color
+			$('#tabs>ul>li>a').css({background: '#a2a2a2', color: '#cecece'});//set an object here in css for our default color
+			//Change the background color of the tab you have clicked on 
+			$(this).css({background: '#eaeaea', color: '#333'});
+			//2. Now we need access the content with the associated tab
+			//Use the this keyword & attribute method to find out which href we have clicked on 
+			var thisTab = $(this).attr('href');
+			//alert(thisTab);
+			//3. Now fade out the tab that is showing 
+			$('#tabs > div:visible').fadeOut(200, function(){//Add a callback function to fade in the tab we have clicked on
+				$(thisTab).fadeIn(200);
+			});
+			
+		}); */
 
 	</script>
 
